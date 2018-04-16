@@ -1,0 +1,414 @@
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *    - 0.1. Color
+ *  1. RESPONSIVE SCREEN
+ *    - 1.1. Media screen max width 1024px
+ *    - 1.2. Media screen max width 768px
+ *    - 1.3. Media screen max width 767px
+ *    - 1.4. Media screen max width 600px
+ *    - 1.5. Media screen max width 480px
+ *    - 1.6. Media screen max width 414px
+ *    - 1.7. Media screen max width 380px
+ *    - 1.8. Media screen max width 320px
+ */
+
+/*===========================================
+=             RESPONSIVE SCREEN             =
+===========================================*/
+	/*----------  1.0. Media screen min width 1024px  ----------*/
+		@media screen and (max-width: 1024px) {
+			button.slick-arrow {
+				top: 50%;
+				width: auto;
+				height: auto;
+			}
+			button.slick-prev.slick-arrow {
+				left: 8px;
+			}
+
+			button.slick-next.slick-arrow {
+				right: 8px;
+			}
+
+			button.slick-next.slick-arrow:before,
+			button.slick-prev.slick-arrow:before {
+				font-size: 40px;
+			}
+
+			.newletter #btn-signup {
+				width: 25%;
+			}
+
+			.block-right .slick-dots {
+				bottom: -30px;
+			}
+		}
+	/*----------  1.2. Media screen max width 768px  ----------*/
+		@media screen and (max-width: 768px) {
+
+			.menu li a {
+			    font-size: 12px;
+    			padding: 0 10px;
+			}
+
+			.menu ul,
+			.menu li {
+				height: 30px;
+			}
+
+			.menu li a {
+				line-height: 30px;
+			}
+
+			.news-part-wrapper .news-events {
+				width: 100%;
+				margin-right: 0;
+			}
+
+			.news-part-wrapper .partners {
+				margin-top: 20px;
+				width: 100%;
+				margin-left: 0;
+			}
+
+			.newletter #your-mail {
+				margin-right: 0;
+				width: 100%;
+			}
+
+			.newletter #btn-signup {
+			    width: auto;
+    			float: right;
+			}
+
+			.slider .slider-nav {
+				position: relative;
+			}
+
+			.slider button.slick-arrow {
+				top: 50%;
+			}
+
+			.welcome-block .block-left,
+			.welcome-block .block-right {
+				width: 50%;
+			}
+
+
+			.welcome-block .block-left .main-title {
+				font-size: 24px;
+			}
+
+			.slider .banner-item .description {
+				width: calc(100% - 165px);
+			}
+		}
+	/*----------  1.3. Media screen max width 767px  ----------*/
+		@media screen and (max-width: 767px) {
+			.slider .banner-item .description {
+			    width: calc(100% - 165px);
+			}
+
+			#slider-banner .slick-dots {
+				padding-top: 0;
+				position: relative;
+			}
+
+			.slider .banner-item .description {
+				width: 100%;
+				border: none;
+			}
+
+			
+
+		}
+	/*----------  1.4. Media screen max width 600px  ----------*/
+		@media screen and (max-width: 600px) {
+			#slider-banner,
+			#welcome,
+			#news-part,
+			.news-part-wrapper .partners,
+			#news-part .news-part-wrapper,
+			.footer-main-wrapper {
+				margin-top: 15px;
+			}
+
+			button.slick-next.slick-arrow:before, 
+			button.slick-prev.slick-arrow:before {
+				font-size: 26px;
+			}
+
+			.header-topbar .topbar-right .language {
+			    padding-left: 0px;
+			    border-left: none;
+			}	
+
+			.news-part-wrapper .partners.mobile {
+				display: block;
+			}
+
+			.news-part-wrapper .partners.mobile .slick-list {
+				margin: 0 50px;
+			}
+
+			.news-part-wrapper .partners.pc {
+				display: none;
+			}
+
+			.footer-main-wrapper {
+				padding-bottom: 0;
+			}
+
+			.footer-main-wrapper .column-3 {
+				width: 100%;
+				display: block;
+				padding-bottom: 10px;
+			}
+
+			.column-3 {
+				border-right: none;
+				border-bottom: 1px solid #c1d1c1;
+			}
+
+			.column-3:last-child {
+				border-bottom: none;
+			}
+
+			.footer-main-wrapper .column-3 + .column-3 {
+				padding-top: 10px;
+				border-top: 1px solid #f4efef;
+				border-left: none;
+			}
+
+			.newletter #your-mail {
+				width: 50%;
+			}
+
+			.newletter #btn-signup {
+			    width: 20%;
+			    float: none;
+			    margin-left: 10px;
+			}
+
+			.hyperlink .custom {
+			    display: block;
+			    margin-top: 5px;
+		        float: none;
+			}
+
+			.welcome-block .block-left .main-title {
+				font-size: 24px;
+			}
+
+			.welcome-block .block-left, 
+			.welcome-block .block-right {
+				width: 100%;
+				display: block;
+			}
+
+			.welcome-block .block-right {
+				margin-top: 20px;
+				float: none;
+			}
+
+			.welcome-block {
+			    padding: 15px 10px 10px 10px;
+			}
+			.menu {
+				margin-top: 5px;
+			    background: #ff8d00;
+			    background-image: -moz-linear-gradient( 90deg, #ff8d00 0, #ffc200 70%);
+			    background-image: -webkit-linear-gradient( 90deg, #ff8d00 0, #ffc200 70%);
+			    background-image: -ms-linear-gradient( 90deg, #ff8d00 0, #ffc200 70%);
+			    border-radius: 5px;
+			    -webkit-border-radius: 5px;
+			}
+
+			.menu li a:before,
+			.menu li a:after {
+				content: none;
+			}
+
+			.menu > ul {
+				max-height: 0;
+				overflow: hidden;
+				margin: 0;
+				height: auto;
+			    border-top-left-radius: 0;
+			    -webkit-border-top-left-radius: 0;
+    			border-top-right-radius: 0;
+    			-webkit-border-top-right-radius: 0;
+				border: none;
+			}
+
+			.menu li {
+				visibility: hidden;
+				display: block;
+				padding: 8px 10px;
+				border: none;
+				width: 100%;
+			}
+
+			.menu li:last-child{
+				margin-bottom: 10px;
+			}
+
+			.menu .navbar-handle {
+				display: block;
+			}
+
+			#navbar-checkbox:checked + .menu ul {
+				max-height: 300px;
+			}
+
+			#navbar-checkbox:checked + .menu li {
+				visibility: visible;
+			}
+
+			#navbar-checkbox:checked + .menu .navbar-handle,
+			#navbar-checkbox:checked + .menu .navbar-handle:after,
+			#navbar-checkbox:checked + .menu .navbar-handle:before {
+				border-color: #fff;
+			}
+
+			.menu li:first-child a {
+				border-radius: 0;
+			}
+
+			.menu li:last-child a {
+				border-radius: 0;
+			}
+
+			.menu .navbar-handle {
+			    top: 102px;
+   				right: 22px;
+			}
+
+			.header-topbar .topbar-right {
+			    margin-top: 8px;
+			    display: block;
+			    margin-left: 10px;
+			    width: 100%;
+			    float: left
+			}
+
+		}
+	/*----------  1.5. Media screen max width 480px  ----------*/
+		@media screen and (max-width: 480px) {
+
+			.news-events .title-news {
+				display: block;
+			}
+
+			.news-events .date-news {
+				padding-left: 0;
+				float: none;
+				display: block;
+				margin-top: 5px;
+			}
+
+			.news-events .date-news:before {
+				content: none;
+			}
+
+			.news-events .description {
+				margin-top: 5px;
+			}
+
+			.news-representation .image-block {
+				vertical-align: middle;
+			}
+
+			.news-representation {
+				padding: 10px 10px 7px 10px;
+			}
+
+			.news-events ul .title-news {
+				padding-top: 0;
+			}
+
+			.news-events ul .description {
+				margin-top: 5px;
+			}
+
+			.hyperlink .link-menu li {
+				margin-bottom: 5px;
+			}
+
+			.news-part-wrapper .partners.mobile .slick-list {
+				margin: 0;
+			}
+
+		}
+	/*----------  1.6. Media screen max width 414px  ----------*/
+		@media screen and (max-width: 414px) {
+			.demo-wrapper .item {
+				margin: 0;
+			}
+
+			button.slick-next.slick-arrow:before, 
+			button.slick-prev.slick-arrow:before {
+				font-size: 16px;
+			}
+		}
+	/*----------  1.7. Media screen max width 380px  ----------*/
+		@media screen and (max-width: 380px) {
+			.newletter #your-mail {
+				width: 75%;;
+			}
+
+			.newletter #btn-signup {
+			    width: auto;
+			    float: right;
+			    margin-left: 10px;
+			}
+
+			.news-representation .image-block {
+				width: 100%;
+				display: block;
+			}
+
+			.news-representation .content-block {
+				display: block;
+				width: 100%;
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+	/*----------  1.8. Media screen max width 320px  ----------*/
+		@media screen and (max-width: 320px) {
+			.header-topbar .topbar-right .language {
+				padding-left: 0;
+				border-left: none;
+				display: block;
+			}
+
+			.header-topbar .topbar-right #search {
+				margin-top: 2px;
+			}
+
+			.menu .navbar-handle {
+				top: 104px;
+			}
+
+			.newletter #your-mail {
+				width: 70%;
+			}
+
+			.newletter #btn-signup {
+				margin-top: -2px;
+			}
+		}
+
+/*=====  End of  RESPONSIVE SCREEN   ======*/
+
+
+
+	

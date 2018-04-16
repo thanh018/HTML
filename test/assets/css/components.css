@@ -1,0 +1,66 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*----------  hover menu  ----------*/
+  .menu li:hover a {
+    color: #333;
+    text-shadow: none;
+  }
+
+  .menu li a {
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+  }
+
+  .menu li a:before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    left: -140px;
+    bottom: -160px;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    -webkit-transform: scale(0) translate(0,0);
+    -moz-transform: scale(0) translate(0,0);
+    -ms-transform: scale(0) translate(0,0);
+    -o-transform: scale(0) translate(0,0);
+    transform: scale(0) translate(0,0);
+  }
+
+  .menu li:hover a:before {
+    -webkit-transform: scale(1) translate(100px,0);
+    -moz-transform: scale(1) translate(100px,0);
+    -ms-transform: scale(1) translate(100px,0);
+    -o-transform: scale(1) translate(100px,0);
+    transform: scale(1) translate(100px,0);
+  }
+
